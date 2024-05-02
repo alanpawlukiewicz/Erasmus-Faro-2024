@@ -257,8 +257,21 @@ body {
 	background: #000;
 }
 
+.stat-header {
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.stat-anchor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
 .stat-btn {
-	margin-left: 5px;
+	/* margin-left: 5px; */
 	padding: 15px 15px;
 	font-family: "Lato";
 	font-weight: 600;
@@ -323,6 +336,12 @@ body {
 
 .desc-desc {
 	color: #fff;
+}
+
+.goals div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer {
