@@ -1,0 +1,25 @@
+.main-section-participants {
+	margin: 104px 0 20px 0;
+}
+
+.students {
+	margin: 0 20px;
+}
+
+.specialization {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: start;
+	flex-wrap: wrap;
+	margin: 30px 0;
+}
+
+.specialization img {
+	height: 300px;
+	width: 80%;
+}
+
+hr {
+	width: 80%;
+	margin: 0 auto;
+}
