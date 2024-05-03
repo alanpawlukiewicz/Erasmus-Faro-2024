@@ -16,7 +16,7 @@
 	color: #fff;
 	padding: 20px 40px;
 	cursor: pointer;
-	transition: all 0.5s;
+	transition: background 0.5s;
 	font-weight: 800;
 }
 
@@ -34,8 +34,7 @@
 	border-bottom-right-radius: 360px;
 }
 
-.ele-div,
-.auto-div {
+.ele-div {
 	display: none;
 	text-align: center;
 }
@@ -45,11 +44,96 @@
 	text-align: center;
 }
 
+.auto-div {
+	display: none;
+}
+
+.auto-div p {
+	text-align: center;
+}
+
+.auto-div-features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.auto-div-feature {
+	display: block;
+	background-color: #fff;
+	border-radius: 30px;
+	width: 453.6px;
+	height: 470px;
+	margin: 30px;
+	box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
+	transition: box-shadow 0.2s;
+	/* 252px265px */
+}
+
+.auto-div-feature:hover {
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auto-div-feature img {
+	background-size: 30%;
+	height: 70%;
+	width: 100%;
+	object-fit: cover;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin: 0;
+}
+
+.auto-div-feature div {
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-repeat: repeat;
+	padding: 10px;
+}
+
+.auto-div-feature div p {
+	margin: 0;
+}
+
 @keyframes fade {
 	from {
 		opacity: 0.4;
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@media (max-width: 560px) {
+	.auto-div-feature {
+		width: 95%;
+	}
+	.speciality-btns {
+		display: block;
+		text-align: center;
+	}
+	.speciality-btns .it-btn {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.speciality-btns .auto-btn {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.speciality-btns button {
+		width: 70%;
+		height: auto;
+	}
+}
+
+@media (max-width: 300px) {
+	.speciality-btns button {
+		font-size: 0.8em;
 	}
 }
