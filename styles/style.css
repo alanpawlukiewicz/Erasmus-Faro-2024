@@ -228,13 +228,18 @@ body {
 .statistics {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: top;
 	flex-wrap: wrap;
 }
 
 .single-stat {
 	width: 25%;
 	margin: 20px 40px;
+}
+
+.single-stat .small {
+	text-align: justify;
+	letter-spacing: 0.8px;
 }
 
 .stat-icon-wrapper {
@@ -317,6 +322,10 @@ body {
 	padding: 30px 20px;
 	width: auto;
 	max-width: 100%;
+}
+
+.desc-div-two .medium {
+	color: #fff;
 }
 
 .desc-div-three {
