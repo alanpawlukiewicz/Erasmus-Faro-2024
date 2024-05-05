@@ -1,7 +1,3 @@
-.main-section-organisators {
-	margin: 104px 0 20px 0;
-}
-
 .organisators,
 .companies {
 	display: flex;
@@ -28,8 +24,9 @@
 }
 
 .single-organisator img {
-	max-width: 300px;
-	max-height: 150px;
+	object-fit: contain;
+	width: 350px;
+	height: 150px;
 	background: #fff;
 	border-radius: 5px;
 	padding: 10px 20px;
@@ -40,7 +37,7 @@
 
 .organisator-sabit {
 	display: flex;
-	justify-content: center;
+	justify-content: top;
 	align-items: center;
 	flex-direction: column;
 }
@@ -71,6 +68,11 @@
 
 @media (max-width: 450px) {
 	.single-organisator img {
-		width: 90%;
+		width: 80%;
+	}
+	.single-organisator .logo-sabit {
+		width: 80%;
+		height: auto;
+		font-size: 0.8em;
 	}
 }
