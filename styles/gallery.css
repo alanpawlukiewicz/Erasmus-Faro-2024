@@ -1,9 +1,8 @@
 .gallery {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	/* padding: 10px 0; */
 }
 
 .gallery img {

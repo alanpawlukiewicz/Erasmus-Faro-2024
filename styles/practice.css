@@ -67,6 +67,10 @@
 	/* 252px265px */
 }
 
+.auto-div-feature .medium {
+	color: #a7a7a7;
+}
+
 .auto-div-feature:hover {
 	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }

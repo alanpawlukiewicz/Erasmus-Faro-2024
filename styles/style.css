@@ -305,20 +305,24 @@ body {
 	margin: 40px 20px;
 }
 
-.desc-div-one {
-	background: rgba(0, 0, 0, 0.8);
+.desc-div-one,
+.desc-div-two,
+.desc-div-three {
 	margin: 10px;
 	padding: 30px 20px;
-	width: 100%;
 	border-radius: 15px;
+	box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3),
+		0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.desc-div-one {
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
 }
 
 .desc-div-two {
 	background: #aaaaaa;
-	border-radius: 15px;
-	margin: 10px;
-	padding: 30px 20px;
-	width: auto;
+	flex: auto;
 	max-width: 100%;
 }
 
@@ -326,13 +330,30 @@ body {
 	color: #fff;
 }
 
+.desc-div-four {
+	height: calc(100% - 20px);
+	min-width: 20%;
+	max-width: 100%;
+	flex: 1;
+	border-radius: 15px;
+	margin: 10px;
+	box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3),
+		0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+	background: none;
+}
+
+.desc-div-four img {
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	border-radius: 15px;
+	object-fit: cover;
+}
+
 .desc-div-three {
 	background: #888888;
-	margin: 10px;
-	padding: 30px 20px;
 	width: auto;
 	max-width: 100%;
-	border-radius: 15px;
 }
 
 .desc-header {
@@ -405,6 +426,13 @@ body {
 	user-select: none;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 .fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
@@ -448,6 +476,14 @@ body {
 	}
 	.carousel-img {
 		width: 100%;
+	}
+}
+
+@media (max-width: 1065px) {
+	.desc-div-four,
+	.desc-div-four img {
+		height: auto;
+		box-shadow: none;
 	}
 }
 
