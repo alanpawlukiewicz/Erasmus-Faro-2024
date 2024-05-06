@@ -11,7 +11,7 @@
 	height: 200px;
 	border-radius: 8px;
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-	transition: box-shadow 0.1s;
+	transition: box-shadow 0.2s;
 	margin: 10px;
 	cursor: pointer;
 }
@@ -74,7 +74,7 @@
 	position: absolute;
 	top: 50%;
 	background: rgba(0, 0, 0, 0.8);
-	padding: 20px 10px;
+	padding: 20px;
 	border: none;
 	cursor: pointer;
 	outline: none;
