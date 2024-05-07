@@ -70,9 +70,22 @@
 @media (max-width: 450px) {
 	.single-organisator img {
 		width: 80%;
+		height: auto;
 	}
 	.single-organisator .logo-sabit {
 		width: 80%;
+		height: auto;
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 240px) {
+	.single-organisator img {
+		width: 42vw;
+		height: auto;
+	}
+	.single-organisator .logo-sabit {
+		width: 42vw;
 		height: auto;
 		font-size: 0.8em;
 	}

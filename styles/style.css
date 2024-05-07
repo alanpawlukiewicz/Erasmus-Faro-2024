@@ -556,8 +556,54 @@ body {
 	}
 }
 
-@media (max-width: 190px) {
+@media (max-width: 240px) {
+	.giant {
+		font-size: 15.6vw;
+	}
 	.bigger {
-		font-size: 1.6em;
+		font-size: 13vw;
+	}
+	.big {
+		font-size: 8.6vw;
+	}
+	.medium,
+	.logo {
+		font-size: 6.6vw;
+	}
+	.small {
+		font-size: 5.3vw;
+	}
+	.stat-header {
+		font-size: 7.6vw;
+	}
+	.stat-icon-wrapper * {
+		width: 60vw;
+		height: 60vw;
+	}
+
+	.stat-icon-wrapper .stat-icon img {
+		width: 67%;
+		height: auto;
+	}
+
+	ul.small.desc-desc {
+		margin: 0;
+		padding: 0;
+	}
+
+	.desc-div-four img {
+		width: 80vw;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.desc-div-two,
+	.desc-div-one {
+		overflow: hidden;
+	}
+	.desc-div-two {
+		overflow: hidden;
+		margin: 10px 0;
+		padding: 30px 10px;
 	}
 }
