@@ -1,5 +1,5 @@
 .specialty-desc {
-	margin: auto 30px;
+	margin: auto 50px;
 }
 
 .speciality-btns {
@@ -66,7 +66,7 @@
 	width: 453.6px;
 	height: 470px;
 	margin: 30px;
-	box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
+	box-shadow: 2px 2px 15px #bebebe, -2px -2px 15px #ffffff;
 	transition: box-shadow 0.2s;
 	/* 252px265px */
 }

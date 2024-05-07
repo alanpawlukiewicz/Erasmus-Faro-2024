@@ -363,6 +363,14 @@ body {
 	max-width: 100%;
 }
 
+.desc-div-three .medium {
+	font-weight: 700;
+	color: #fff;
+}
+.desc-div-three .small {
+	color: #fff;
+}
+
 .desc-header {
 	color: #fff;
 	font-weight: 600;

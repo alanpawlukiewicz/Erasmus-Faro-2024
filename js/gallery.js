@@ -16,7 +16,7 @@ function displayImage(img) {
 	imageShown.textContent = "";
 	imageShown.appendChild(imgClone);
 	count = imagesArr.indexOf(img);
-	counter.textContent = `${count + 1}/104`;
+	counter.textContent = `${count + 1}/134`;
 }
 
 function displayImage2() {
@@ -26,7 +26,7 @@ function displayImage2() {
 	imageHover.style.display = "block";
 	imageShown.textContent = "";
 	imageShown.appendChild(imgClone);
-	counter.textContent = `${count + 1}/104`;
+	counter.textContent = `${count + 1}/134`;
 }
 
 images.forEach((img) => {
@@ -50,7 +50,7 @@ minusBtn.addEventListener("click", () => {
 
 plusBtn.addEventListener("click", () => {
 	//Liczba obrazkow -1
-	if (count < 103) {
+	if (count < 133) {
 		count++;
 		displayImage2();
 	}
