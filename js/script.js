@@ -17,7 +17,7 @@ const header = document.querySelector(".bigger");
 const navBtns = document.querySelectorAll(".nav-btn");
 if (header != null) {
 	switch (header.innerHTML) {
-		case "Uczestnicy projektu Erasmus+":
+		case "Uczestnicy Projektu":
 			navBtns[1].style.background = "#e7e7e7";
 			break;
 		case "Organizatorzy":

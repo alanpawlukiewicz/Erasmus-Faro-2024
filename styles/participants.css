@@ -1,21 +1,140 @@
-.students {
-	margin: 0 20px;
+#tut,
+#top,
+#auto,
+#it,
+#elec {
+	scroll-margin-top: 105px;
 }
 
-.specialization {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: start;
-	flex-wrap: wrap;
-	margin: 30px 0;
+.contents {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	box-shadow: 1px 0 4px #a7a7a7;
+	border-top-right-radius: 30px;
+	z-index: 999;
 }
 
-.specialization img {
-	height: 300px;
-	width: 80%;
+.contents .big {
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	border-top-right-radius: 30px;
+	margin: 0;
+	padding: 18px 20px;
+}
+
+.contents ul.medium {
+	margin: 0;
+	padding: 10px 20px 10px 40px;
+	background-color: #fff;
+}
+
+.contents ul li {
+	margin: 0;
+	color: #d4293d;
+}
+
+.contents ul li a {
+	text-decoration: none;
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: #a7a7a7;
+	transition: all 0.3s;
+}
+
+.contents ul li a:hover {
+	color: #fff;
+	background: #d4293d;
 }
 
 hr {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.big {
+	text-align: center;
+}
+
+.student {
+	margin: 30px;
+	/* background: #fff; */
+	padding: 20px 50px;
+	text-align: center;
+	/* border: 1px solid #e6e6e6; */
+	/* box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3),
+		0px 1px 3px 1px rgba(60, 64, 67, 0.15); */
+	transition: scale 0.3s;
+}
+
+.student:hover {
+	scale: 1.1;
+}
+
+.student .student-img {
+	height: 50%;
+	text-align: center;
+}
+
+.student-img img {
+	object-fit: cover;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px rgba(60, 64, 67, 0.3);
+}
+
+.student-desc .medium {
+	color: #a7a7a7;
+}
+
+.student .student-desc .small {
+	color: #d4293d;
+}
+
+.student-desc p {
+	margin: 5px 0;
+	font-family: "Lato";
+}
+
+.student-desc .big {
+	width: 210px;
+}
+
+.tutors {
+	justify-content: space-evenly;
+	margin: 30px 0;
+}
+
+@media (max-width: 330px) {
+	.student-img img {
+		width: 120px;
+		height: 120px;
+		overflow: hidden;
+	}
+	.student {
+		padding: 10px;
+	}
+	.student-desc .big {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 250px) {
+	.student {
+		width: 80%;
+		height: auto;
+		overflow: hidden;
+	}
+	.student-desc {
+		height: auto;
+	}
+	.student-desc p {
+		width: 90%;
+		height: auto;
+	}
+	.student-desc .big {
+		width: 90%;
+	}
 }
