@@ -289,7 +289,7 @@ body {
 	background: none;
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	cursor: pointer;
-	transition: all 0.5s;
+	transition: all 0.2s;
 	color: #000;
 }
 
@@ -310,6 +310,10 @@ body {
 	flex-wrap: wrap;
 	width: 100%;
 	margin: 40px 20px;
+}
+
+.hide {
+	opacity: 0;
 }
 
 .desc-div-one,
@@ -470,7 +474,7 @@ body {
 @keyframes slide-in {
 	from {
 		opacity: 0.4;
-		transform: translateX(-50%);
+		transform: translateX(-100%);
 	}
 	to {
 		opacity: 1;
