@@ -16,7 +16,7 @@ function displayImage(img) {
 	imageShown.textContent = "";
 	imageShown.appendChild(imgClone);
 	count = imagesArr.indexOf(img);
-	counter.textContent = `${count + 1}/134`;
+	counter.textContent = `${count + 1}/${imagesArr.length}`;
 }
 
 function displayImage2() {
@@ -26,7 +26,7 @@ function displayImage2() {
 	imageHover.style.display = "block";
 	imageShown.textContent = "";
 	imageShown.appendChild(imgClone);
-	counter.textContent = `${count + 1}/134`;
+	counter.textContent = `${count + 1}/${imagesArr.length}`;
 }
 
 images.forEach((img) => {
@@ -50,8 +50,43 @@ minusBtn.addEventListener("click", () => {
 
 plusBtn.addEventListener("click", () => {
 	//Liczba obrazkow -1
-	if (count < 133) {
+	if (count < imagesArr.length - 1) {
 		count++;
 		displayImage2();
+	}
+});
+//Contents
+const pracBtn = document.querySelector(".prac-btn");
+const tripBtn = document.querySelector(".trips-btn");
+const pracList = document.querySelector(".prac-list");
+const tripList = document.querySelector(".trips-list");
+const pracListHeight = pracList.offsetHeight;
+const tripListHeight = tripList.offsetHeight;
+pracList.style.maxHeight = "0";
+tripList.style.maxHeight = "0";
+tripBtn.addEventListener("click", () => {
+	if (tripList.style.maxHeight == "0px" || tripList.style.maxHeight == "") {
+		tripBtn.innerHTML = "wycieczki v";
+		tripBtn.style.background = "#d4293d";
+		tripBtn.style.color = "#fff";
+		tripList.style.maxHeight = `${tripListHeight}px`;
+	} else {
+		tripBtn.innerHTML = "wycieczki &#94;";
+		tripList.style.maxHeight = "0px";
+		tripBtn.style.background = "#F2F2F2";
+		tripBtn.style.color = "#a7a7a7";
+	}
+});
+pracBtn.addEventListener("click", () => {
+	if (pracList.style.maxHeight == "0px" || pracList.style.maxHeight == "") {
+		pracBtn.innerHTML = "praktyki v";
+		pracBtn.style.background = "#d4293d";
+		pracBtn.style.color = "#fff";
+		pracList.style.maxHeight = `${pracListHeight}px`;
+	} else {
+		pracBtn.innerHTML = "praktyki &#94;";
+		pracList.style.maxHeight = "0px";
+		pracBtn.style.background = "#F2F2F2";
+		pracBtn.style.color = "#a7a7a7";
 	}
 });

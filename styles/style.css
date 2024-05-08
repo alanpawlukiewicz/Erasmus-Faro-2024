@@ -69,7 +69,6 @@ body {
 	justify-content: space-between;
 	height: 84px;
 	z-index: 10;
-	/* overflow: hidden; */
 }
 
 .header .logo {
@@ -97,12 +96,12 @@ body {
 	text-decoration: none;
 	font-size: 1em;
 	color: #000;
-	transition: all 0.3s;
+	transition: background 0.3s, color 0.3s;
 }
 
 .nav-btn:hover {
-	background: rgba(0, 0, 0, 0.8);
-	color: #fff;
+	background: rgba(0, 0, 0, 0.8) !important;
+	color: #fff !important;
 }
 
 .menu-container {
