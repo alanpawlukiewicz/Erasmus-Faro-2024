@@ -90,3 +90,26 @@ pracBtn.addEventListener("click", () => {
 		pracBtn.style.color = "#a7a7a7";
 	}
 });
+
+//Keypress action
+document.onkeydown = function (event) {
+	if (imageHover.style.display == "block") {
+		if (event.key == "ArrowRight") {
+			if (count < imagesArr.length - 1) {
+				count++;
+				displayImage2();
+			}
+		} else if (event.key == "ArrowLeft") {
+			if (count > 0) {
+				count--;
+				displayImage2();
+			}
+		}
+	}
+};
+
+imageHover.addEventListener("click", (e) => {
+	if (e.target.tagName == "DIV") {
+		imageHover.style.display = "";
+	}
+});
