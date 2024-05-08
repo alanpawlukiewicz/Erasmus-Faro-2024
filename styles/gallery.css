@@ -228,3 +228,13 @@ section {
 		overflow: hidden;
 	}
 }
+
+@media (max-width: 250px) {
+	* {
+		font-size: 6vw;
+	}
+	.contents {
+		width: 100%;
+		overflow: hidden;
+	}
+}
