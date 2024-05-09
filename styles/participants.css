@@ -113,12 +113,8 @@ hr {
 	box-shadow: 2px 2px 4px rgba(60, 64, 67, 0.3);
 }
 
-.student-desc .medium {
-	color: #a7a7a7;
-}
-
 .student .student-desc .small {
-	color: #d4293d;
+	color: #a7a7a7;
 }
 
 .student-desc p {
@@ -135,12 +131,21 @@ hr {
 	margin: 30px 0;
 }
 
-.tutor img {
-	background-color: red;
+.tutor div {
 	height: 480px;
 	width: 480px;
+}
+
+.tutor div img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 30px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.tutor div img:hover {
+	transform: scale(1.05);
 }
 
 @media (max-width: 570px) {

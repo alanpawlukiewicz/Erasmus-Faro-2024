@@ -12,7 +12,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
 	let i;
-	let slides = document.getElementsByClassName("carousel-img");
+	let slides = document.getElementsByClassName("carousel-div");
 	let dots = document.getElementsByClassName("dot");
 	if (n > slides.length) {
 		slideIndex = 1;

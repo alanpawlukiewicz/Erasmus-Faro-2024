@@ -206,10 +206,28 @@ body {
 	align-items: center;
 }
 
-.carousel-img {
+.carousel-images div {
+	position: relative;
 	width: 620px;
+	height: 470px;
 	max-width: 890px;
 	display: none;
+}
+
+.carousel-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel-div .text {
+	color: #fff;
+	font-weight: 800;
+	text-shadow: black 0px 0px 2px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
 
 .dot {
@@ -383,6 +401,10 @@ body {
 	color: #fff;
 }
 
+.goals {
+	margin: 10px;
+}
+
 .goals div {
 	display: flex;
 	justify-content: center;
@@ -492,7 +514,7 @@ body {
 	.main-right {
 		width: 100%;
 	}
-	.carousel-img {
+	.carousel-images div {
 		width: 100%;
 	}
 }
@@ -536,11 +558,6 @@ body {
 	}
 	.logo {
 		font-size: 1em;
-	}
-	.carousel-wrapper,
-	.carousel,
-	.carousel-images {
-		width: 100%;
 	}
 	.prev {
 		position: absolute;

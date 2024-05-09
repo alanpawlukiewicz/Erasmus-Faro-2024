@@ -92,7 +92,7 @@ pracBtn.addEventListener("click", () => {
 });
 
 //Keypress action
-document.onkeydown = function (event) {
+document.onkeydown = (event) => {
 	if (imageHover.style.display == "block") {
 		if (event.key == "ArrowRight") {
 			if (count < imagesArr.length - 1) {
@@ -113,3 +113,49 @@ imageHover.addEventListener("click", (e) => {
 		imageHover.style.display = "";
 	}
 });
+
+//Swipe mechanic
+imageHover.addEventListener("touchstart", handleTouchStart, false);
+imageHover.addEventListener("touchmove", handleTouchMove, false);
+
+let xDown = null;
+let yDown = null;
+
+function getTouches(e) {
+	return e.touches || e.originalEvent.touches;
+}
+
+function handleTouchStart(e) {
+	const firstTouch = getTouches(e)[0];
+	xDown = firstTouch.clientX;
+	yDown = firstTouch.clientY;
+}
+
+function handleTouchMove(e) {
+	if (!xDown || !yDown) {
+		return;
+	}
+
+	var xUp = e.touches[0].clientX;
+	var yUp = e.touches[0].clientY;
+
+	var xDiff = xDown - xUp;
+	var yDiff = yDown - yUp;
+
+	if (Math.abs(xDiff) > Math.abs(yDiff)) {
+		if (xDiff > 0) {
+			if (count < imagesArr.length - 1) {
+				count++;
+				displayImage2();
+			}
+		} else {
+			if (count > 0) {
+				count--;
+				displayImage2();
+			}
+		}
+	}
+	/* reset values */
+	xDown = null;
+	yDown = null;
+}

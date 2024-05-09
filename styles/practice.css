@@ -91,7 +91,7 @@
 }
 
 .auto-div-feature div {
-	height: 20%;
+	flex: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -102,6 +102,11 @@
 
 .auto-div-feature div p {
 	margin: 0;
+	padding: 3px 0;
+}
+
+.auto-div-feature div .big {
+	line-height: 1;
 }
 
 @keyframes fade {
