@@ -209,7 +209,8 @@ body {
 .carousel-images div {
 	position: relative;
 	width: 620px;
-	height: 470px;
+	/* height: 470px; */
+	height: auto;
 	max-width: 890px;
 	display: none;
 }
