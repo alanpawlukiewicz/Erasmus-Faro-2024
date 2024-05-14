@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="rysunek.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.58083614"
+     inkscape:cx="134.28916"
+     inkscape:cy="423.52737"
+     inkscape:window-width="1536"
+     inkscape:window-height="890"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#137919;fill-opacity:1;stroke-width:0.264583"
+       id="path1"
+       cx="173.32591"
+       cy="99.986954"
+       r="27.103527" />
+    <rect
+       style="fill:#137919;fill-opacity:1;stroke-width:0.397281"
+       id="rect1"
+       width="291.53375"
+       height="52.840488"
+       x="-129.82362"
+       y="17.309813"
+       ry="26.420244" />
+    <circle
+       style="fill:#137919;fill-opacity:1;stroke-width:0.175648"
+       id="circle1"
+       cx="102.72009"
+       cy="101.80904"
+       r="17.993097" />
+  </g>
+</svg>

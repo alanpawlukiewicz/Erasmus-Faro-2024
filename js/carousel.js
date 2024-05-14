@@ -3,10 +3,18 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+	clearInterval(carouselTimer);
+	carouselTimer = setInterval(() => {
+		plusSlides(1);
+	}, 5000);
 	showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
+	clearInterval(carouselTimer);
+	carouselTimer = setInterval(() => {
+		plusSlides(1);
+	}, 5000);
 	showSlides((slideIndex = n));
 }
 
@@ -30,7 +38,7 @@ function showSlides(n) {
 	dots[slideIndex - 1].className += " active";
 }
 
-setInterval(() => {
+let carouselTimer = setInterval(() => {
 	plusSlides(1);
 }, 5000);
 

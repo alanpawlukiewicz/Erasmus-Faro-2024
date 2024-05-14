@@ -7,11 +7,19 @@ const plusBtn = document.querySelector(".plus");
 const counter = document.querySelector(".counter");
 let count = 1;
 
+function delay(time) {
+	return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 const imagesArr = Array.prototype.slice.call(images);
 function displayImage(img) {
 	let imgClone = images[imagesArr.indexOf(img)].cloneNode(true);
 	imgClone.style.maxWidth = "90%";
 	imgClone.style.maxHeight = "600px";
+	imgClone.style.position = "absolute";
+	imgClone.style.left = "50%";
+	imgClone.style.top = "50%";
+	imgClone.style.transform = "translate(-50%, -50%)";
 	imageHover.style.display = "block";
 	imageShown.textContent = "";
 	imageShown.appendChild(imgClone);
@@ -19,13 +27,25 @@ function displayImage(img) {
 	counter.textContent = `${count + 1}/${imagesArr.length}`;
 }
 
-function displayImage2() {
+async function displayImage2(isLeft) {
 	let imgClone = images[count].cloneNode(true);
 	imgClone.style.maxWidth = "90%";
 	imgClone.style.maxHeight = "600px";
+	imgClone.style.position = "absolute";
+	imgClone.style.left = "50%";
+	imgClone.style.top = "50%";
+	imgClone.style.transform = "translate(-50%, -50%)";
+
 	imageHover.style.display = "block";
-	imageShown.textContent = "";
+	if (isLeft) {
+		imageShown.firstChild.classList.add("slide-out-left");
+		imgClone.classList.add("slide-in-left");
+	} else {
+		imageShown.firstChild.classList.add("slide-out-right");
+		imgClone.classList.add("slide-in-right");
+	}
 	imageShown.appendChild(imgClone);
+	await delay(100).then(() => imageShown.removeChild(imageShown.firstChild));
 	counter.textContent = `${count + 1}/${imagesArr.length}`;
 }
 
@@ -44,7 +64,7 @@ tbCloceBtn.addEventListener("click", () => {
 minusBtn.addEventListener("click", () => {
 	if (count > 0) {
 		count--;
-		displayImage2();
+		displayImage2(true);
 	}
 });
 
@@ -52,7 +72,7 @@ plusBtn.addEventListener("click", () => {
 	//Liczba obrazkow -1
 	if (count < imagesArr.length - 1) {
 		count++;
-		displayImage2();
+		displayImage2(false);
 	}
 });
 //Contents
@@ -97,12 +117,12 @@ document.onkeydown = (event) => {
 		if (event.key == "ArrowRight") {
 			if (count < imagesArr.length - 1) {
 				count++;
-				displayImage2();
+				displayImage2(false);
 			}
 		} else if (event.key == "ArrowLeft") {
 			if (count > 0) {
 				count--;
-				displayImage2();
+				displayImage2(true);
 			}
 		}
 	}
@@ -146,12 +166,12 @@ function handleTouchMove(e) {
 		if (xDiff > 0) {
 			if (count < imagesArr.length - 1) {
 				count++;
-				displayImage2();
+				displayImage2(false);
 			}
 		} else {
 			if (count > 0) {
 				count--;
-				displayImage2();
+				displayImage2(true);
 			}
 		}
 	}
