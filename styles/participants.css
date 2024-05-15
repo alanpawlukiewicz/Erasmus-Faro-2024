@@ -88,13 +88,57 @@ hr {
 }
 
 .participants-img-div {
+	width: 100%;
+	position: relative;
 	text-align: center;
-	margin: 30px 0;
+	padding: 60px 0 50px 0;
+	margin: 10px 0;
+	overflow: hidden;
+	z-index: 15;
+}
+
+.participants-img-div a div {
+	transition: scale 0.3s ease-out;
+}
+
+.participants-img-div a:hover div {
+	scale: 1.05;
 }
 
 .participants-img {
 	height: 400px;
-	border-radius: 15px;
+	border: 20px solid #fff;
+}
+
+.participants-img2 {
+	position: relative;
+	z-index: 10;
+}
+
+.participants-img1 {
+	position: absolute;
+	right: 40%;
+	scale: 0.9;
+	transform: rotate(-14deg);
+	transition: transform 0.3s, right 0.5s;
+}
+
+.participants-img3 {
+	position: absolute;
+	left: 40%;
+	scale: 0.95;
+	transition: transform 0.3s, left 0.5s;
+	transform: rotate(8deg);
+}
+
+.participants-img-div a:hover div .participants-img1 {
+	transform: rotate(-16deg);
+	right: 50%;
+}
+
+.participants-img-div a:hover div .participants-img3 {
+	transform: rotate(11deg);
+	left: 48%;
 }
 
 .big {
@@ -182,7 +226,7 @@ hr {
 	height: 100%;
 	object-fit: cover;
 	border-radius: 30px;
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-out;
 }
 
 .tutor div img:hover {
@@ -198,9 +242,9 @@ hr {
 
 @media (max-width: 590px) {
 	.participants-img {
-		width: 93vw;
+		width: calc(100% - 60px);
+		border: 15px solid #fff;
 		height: auto;
-		border-radius: 15px;
 	}
 
 	.tutor div {
@@ -217,9 +261,6 @@ hr {
 }
 
 @media (max-width: 330px) {
-	/* .student {
-		width: 100%;
-	} */
 	.student-img img,
 	.tutor-img-wrapper {
 		width: 40vw;
@@ -247,7 +288,7 @@ hr {
 
 @media (max-width: 250px) {
 	.participants-img {
-		width: 80vw;
+		border: 5px solid #fff;
 	}
 	.student {
 		width: 80%;

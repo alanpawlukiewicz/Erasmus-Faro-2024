@@ -14,7 +14,7 @@ function delay(time) {
 const imagesArr = Array.prototype.slice.call(images);
 function displayImage(img) {
 	let imgClone = images[imagesArr.indexOf(img)].cloneNode(true);
-	imgClone.style.maxWidth = "90%";
+	imgClone.style.maxWidth = "100%";
 	imgClone.style.maxHeight = "600px";
 	imgClone.style.position = "absolute";
 	imgClone.style.left = "50%";
@@ -29,7 +29,10 @@ function displayImage(img) {
 
 async function displayImage2(isLeft) {
 	let imgClone = images[count].cloneNode(true);
-	imgClone.style.maxWidth = "90%";
+	if (imageShown.children.length > 1) {
+		imageShown.removeChild(imageShown.firstChild);
+	}
+	imgClone.style.maxWidth = "100%";
 	imgClone.style.maxHeight = "600px";
 	imgClone.style.position = "absolute";
 	imgClone.style.left = "50%";
@@ -45,8 +48,12 @@ async function displayImage2(isLeft) {
 		imgClone.classList.add("slide-in-right");
 	}
 	imageShown.appendChild(imgClone);
-	await delay(100).then(() => imageShown.removeChild(imageShown.firstChild));
 	counter.textContent = `${count + 1}/${imagesArr.length}`;
+	await delay(350).then(() => {
+		if (imageShown.children.length > 1) {
+			imageShown.removeChild(imageShown.firstChild);
+		}
+	});
 }
 
 images.forEach((img) => {
@@ -86,12 +93,12 @@ pracList.style.maxHeight = "0";
 tripList.style.maxHeight = "0";
 tripBtn.addEventListener("click", () => {
 	if (tripList.style.maxHeight == "0px" || tripList.style.maxHeight == "") {
-		tripBtn.innerHTML = "wycieczki v";
+		tripBtn.innerHTML = "wycieczki &#94;";
 		tripBtn.style.background = "#d4293d";
 		tripBtn.style.color = "#fff";
 		tripList.style.maxHeight = `${tripListHeight}px`;
 	} else {
-		tripBtn.innerHTML = "wycieczki &#94;";
+		tripBtn.innerHTML = "wycieczki v";
 		tripList.style.maxHeight = "0px";
 		tripBtn.style.background = "#F2F2F2";
 		tripBtn.style.color = "#a7a7a7";
@@ -99,12 +106,12 @@ tripBtn.addEventListener("click", () => {
 });
 pracBtn.addEventListener("click", () => {
 	if (pracList.style.maxHeight == "0px" || pracList.style.maxHeight == "") {
-		pracBtn.innerHTML = "praktyki v";
+		pracBtn.innerHTML = "praktyki &#94;";
 		pracBtn.style.background = "#d4293d";
 		pracBtn.style.color = "#fff";
 		pracList.style.maxHeight = `${pracListHeight}px`;
 	} else {
-		pracBtn.innerHTML = "praktyki &#94;";
+		pracBtn.innerHTML = "praktyki v";
 		pracList.style.maxHeight = "0px";
 		pracBtn.style.background = "#F2F2F2";
 		pracBtn.style.color = "#a7a7a7";

@@ -7,13 +7,19 @@
 }
 
 .single-main-organisator {
+	margin: 40px 0;
 	width: 100%;
 	text-align: center;
-	margin: 0 50px;
 }
 
 .single-main-organisator .medium {
 	text-align: justify;
+	margin: 0 50px;
+}
+
+.single-main-organisator .organisator-img-wrapper {
+	width: 100%;
+	background: #fff;
 }
 
 .single-main-organisator img {
@@ -23,8 +29,6 @@
 	background: #fff;
 	border-radius: 5px;
 	padding: 10px 20px;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	transition: box-shadow 0.3s;
 	text-align: center;
 }
 
@@ -80,8 +84,7 @@
 }
 
 .single-organisator img:hover,
-.single-organisator .logo-sabit:hover,
-.single-main-organisator img:hover {
+.single-organisator .logo-sabit:hover {
 	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -98,6 +101,10 @@
 }
 
 @media (max-width: 450px) {
+	.single-main-organisator .medium,
+	.single-organisator {
+		margin: 0 10px;
+	}
 	.single-organisator img {
 		width: 80%;
 		height: auto;
@@ -108,15 +115,11 @@
 		font-size: 0.8em;
 	}
 	.single-main-organisator img {
-		width: 65%;
+		padding: 10px 5px;
 	}
 }
 
 @media (max-width: 260px) {
-	.single-main-organisator,
-	.single-organisator {
-		margin: 0 5px;
-	}
 	.single-organisator img {
 		width: 42vw;
 		height: auto;

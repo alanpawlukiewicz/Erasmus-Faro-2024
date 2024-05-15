@@ -23,11 +23,16 @@ if (header != null) {
 		case "Organizatorzy":
 			navBtns[2].style.background = "#e7e7e7";
 			break;
-		case "Praktyki":
+		case "Galeria":
 			navBtns[3].style.background = "#e7e7e7";
 			break;
-		case "Galeria":
+		case "Praktyki":
 			navBtns[4].style.background = "#e7e7e7";
+			navBtns[5].style.background = "#e7e7e7";
+			break;
+		case "Przygotowania":
+			navBtns[4].style.background = "#e7e7e7";
+			navBtns[6].style.background = "#e7e7e7";
 			break;
 		default:
 			console.log("err");
@@ -35,3 +40,18 @@ if (header != null) {
 } else {
 	navBtns[0].style.background = "#e7e7e7";
 }
+
+//Inne
+const otherBtn = document.querySelector(".other-btn");
+const other = document.querySelector(".other-dropdown");
+otherBtn.addEventListener("click", () => {
+	if (other.style.maxHeight == "" || other.style.maxHeight == "0px") {
+		otherBtn.innerHTML = "Inne &#94;";
+		other.style.maxHeight = "120px";
+		other.style.padding = "5px";
+	} else {
+		otherBtn.innerHTML = "Inne v";
+		other.style.maxHeight = "0";
+		other.style.padding = "0 5px";
+	}
+});
