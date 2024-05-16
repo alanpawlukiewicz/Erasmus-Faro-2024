@@ -1,12 +1,37 @@
-.papaj {
-	animation: dziadyga 0.1s infinite;
+.preparation-div {
+	margin: 10px 50px;
 }
 
-@keyframes dziadyga {
-	from {
-		transform: rotate(0deg);
+.preparation-div .big {
+	text-align: center;
+}
+
+.preparation-div .medium {
+	text-align: justify;
+}
+
+@media (max-width: 670px) {
+	.speciality-btns {
+		display: block;
+		text-align: center;
 	}
-	to {
-		transform: rotate(360deg);
+	.speciality-btns .it-btn {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.speciality-btns .auto-btn {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.speciality-btns button {
+		width: 75%;
+		height: auto;
+	}
+}
+
+@media (max-width: 570px) {
+	.preparation-div {
+		margin: 20px 10px;
 	}
 }

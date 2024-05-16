@@ -46,11 +46,11 @@ const otherBtn = document.querySelector(".other-btn");
 const other = document.querySelector(".other-dropdown");
 otherBtn.addEventListener("click", () => {
 	if (other.style.maxHeight == "" || other.style.maxHeight == "0px") {
-		otherBtn.innerHTML = "Inne &#94;";
+		otherBtn.innerHTML = "Inne <img src='images/icons/arrow_up.svg' alt='v'>";
 		other.style.maxHeight = "120px";
 		other.style.padding = "5px";
 	} else {
-		otherBtn.innerHTML = "Inne v";
+		otherBtn.innerHTML = "Inne <img src='images/icons/arrow_down.svg' alt='v'>";
 		other.style.maxHeight = "0";
 		other.style.padding = "0 5px";
 	}

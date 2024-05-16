@@ -137,7 +137,7 @@
 	}
 
 	.speciality-btns button {
-		width: 70%;
+		width: 75%;
 		height: auto;
 	}
 }
@@ -145,6 +145,7 @@
 @media (max-width: 300px) {
 	.speciality-btns button {
 		font-size: 5vw;
+		padding: 10px;
 	}
 	.medium {
 		font-size: 6.4vw;

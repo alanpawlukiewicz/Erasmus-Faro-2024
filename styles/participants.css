@@ -199,7 +199,7 @@ hr {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fff;
+	background: rgba(255, 255, 255, 0.95);
 }
 
 .tutor-img-wrapper img {
@@ -256,7 +256,7 @@ hr {
 		height: auto;
 	}
 	.student {
-		width: 100%;
+		width: 70%;
 	}
 }
 
