@@ -59,7 +59,7 @@ body {
 	min-width: 250px;
 	max-width: 500px;
 	font-size: 1.2em;
-	margin: 0 10px;
+	margin: 10px;
 }
 
 .medium {
@@ -427,12 +427,13 @@ hr {
 }
 
 .desc-div-one {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgb(19, 121, 25);
 	width: 100%;
 }
 
 .desc-div-two {
-	background: #aaaaaa;
+	/* background: #aaaaaa; */
+	background: rgba(0, 0, 0, 0.8);
 	flex: auto;
 	max-width: 100%;
 }
@@ -462,7 +463,8 @@ hr {
 }
 
 .desc-div-three {
-	background: #888888;
+	/* background: #888888; */
+	background: #d4293d;
 	width: auto;
 	max-width: 100%;
 }
