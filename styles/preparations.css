@@ -1,12 +1,22 @@
+.center {
+	align-items: start;
+}
+
 .prep-div {
 	margin: 20px 50px;
 }
 
+.prep-desc {
+	margin: 30px 0;
+}
+
 .prep-desc .prep-main {
 	width: 50%;
+	margin: 10px 0;
 }
 
 .prep-desc .prep-sub {
+	margin: 10px 0;
 	width: 50%;
 	height: 100%;
 }
@@ -14,27 +24,22 @@
 .prep-desc .prep-sub img {
 	width: 75%;
 	height: auto;
+	border-radius: 15px;
+	box-shadow: 2px 2px 15px #bebebe, -2px -2px 15px #ffffff;
+	transition: box-shadow 0.2s;
+}
+
+.prep-desc .prep-sub img:hover {
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .prep-desc div .medium {
 	width: 100%;
 	text-align: justify;
-}
-
-.slide-from-bottom {
-	animation: slide;
-	animation-duration: 1s;
-}
-
-@keyframes slide {
-	from {
-		opacity: 0.4;
-		transform: translateY(100%);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+	margin: 0;
+	background: #fff;
+	padding: 20px;
+	border-radius: 15px;
 }
 
 @media (max-width: 900px) {

@@ -10,23 +10,31 @@
 </head>
 
 <body>
+
     <header class="header">
-        <a class="big logo" href="index.html">Praktyki Faro 2024</a>
+        <a class="big logo center" href="index.html">
+            <div class="center logo-left">
+                <img src="./images/logo.png" alt="logo zse">
+                <img src="./images/eu_flag.svg" alt="flaga ue">
+            </div>
+            <div class="logo-center center">Praktyki Faro</div>
+            <div class="logo-right center">2024</div>
+        </a>
         <div class="nav-bar">
-            <a href="index.html" class="header-anchor"><button class="nav-btn medium home-btn">Strona
-                    główna</button></a>
+            <a href="index.html" class="header-anchor"><button class="nav-btn medium home-btn">Home</button></a>
             <a href="participants.html" class="header-anchor"><button
                     class="nav-btn medium participants-btn">Uczestnicy</button></a>
             <a href="organisators.html" class="header-anchor"><button
                     class="nav-btn medium organisators-btn">Instytucje</button></a>
-            <a href="gallery.html" class="header-anchor"><button class="nav-btn medium gallery-btn">Galeria</button></a>
+            <a href="practice.html" class="header-anchor"><button
+                    class="nav-btn medium practice-btn">Praktyki</button></a>
             <div class="nav-other">
                 <button class="other-btn nav-btn medium">Inne <img src="images/icons/arrow_down.svg" alt="v"></button>
                 <div class="other-dropdown">
-                    <a href="practice.html" class="header-anchor"><button
-                            class="nav-btn medium practice-btn">Praktyki</button></a>
-                    <a href="preparations.html" class="header-anchor"><button class="nav-btn medium gallery-btn"
-                            style="margin-top: 5px;">Przygotowania</button></a>
+                    <a href="preparations.html" class="header-anchor"><button
+                            class="nav-btn medium gallery-btn">Przygotowania</button></a>
+                    <a href="gallery.html" class="header-anchor"><button class="nav-btn medium gallery-btn"
+                            style="margin-top: 5px;">Galeria</button></a>
                 </div>
             </div>
         </div>
@@ -35,127 +43,150 @@
             <button class="menu-navicon"><span class="navicon"></span></button>
         </div>
     </header>
+    <img class="background bg-small" src="./images/gallery/trips/faro/faro7.jpg" alt="tło">
+    <img class="background bg-big" src="./images/background.jpg" alt="tło">
     <img class="background1 slide-in2" src="images/background1.svg" alt="">
     <img class="background2 slide-out" src="images/background2.svg" alt="">
-    <section class="main-section">
+
+    <section class="main-section center">
         <div class="main-left noselect">
-            <div class="main-left-wrapper slide-in">
-                <p class=" medium">Praktyki zawodowe w Portugalii 2024</p>
-                <p class="giant">Praktyki <label style="-webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: black;color: #fff">Faro</label></p>
-                <p class="medium">kwiecień 20 - maj 11</p>
+            <div class="main-left-wrapper slide-from-bottom">
+                <p class="medium giant-top">Praktyki zawodowe w Portugalii 2024</p>
+                <p class="giant">Praktyki Faro</p>
+                <p class="medium giant-bottom">kwiecień 20 - maj 11</p>
             </div>
         </div>
-        <div class="main-right">
-            <div class="carousel-wrapper">
-                <div class="carousel">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <div class="carousel-images">
-                        <div class="carousel-div fade">
-                            <img src="images/carousel_img1.jpg" class="carousel-img" alt="aktywności">
-                            <p class="text big">nowe doświadczenia</p>
+    </section>
+
+    <section class="project-desc white-bg">
+        <div class="center">
+            <p class="medium-color">Opis projektu</p>
+        </div>
+        <div class="main-desc">
+            <div class="main-right">
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <div class="carousel-div fade">
+                                <img src="images/carousel/carousel_img1.jpg" class="carousel-img" alt="aktywności">
+                                <p class="text big">nowe doświadczenia</p>
+                            </div>
+                            <div class="carousel-div fade">
+                                <img src="images/carousel/carousel_img2.jpg" class="carousel-img" alt="doświadczenia">
+                                <p class="text big">integracja</p>
+                            </div>
+                            <div class="carousel-div fade">
+                                <img src="images/carousel/carousel_img3.png" class="carousel-img" alt="praktyki">
+                                <p class="text big">praktyki zawodowe</p>
+                            </div>
+                            <div class="carousel-div fade">
+                                <img src="images/carousel/carousel_img4.jpg" class="carousel-img" alt="wycieczki">
+                                <p class="text big">zwiedzanie i wycieczki</p>
+                            </div>
                         </div>
-                        <div class="carousel-div fade">
-                            <img src="images/carousel_img2.jpg" class="carousel-img" alt="doświadczenia">
-                            <p class="text big">integracja</p>
+                        <div class="dot-div">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
-                        <div class="carousel-div fade">
-                            <img src="images/carousel_img3.png" class="carousel-img" alt="praktyki">
-                            <p class="text big">praktyki zawodowe</p>
-                        </div>
-                        <div class="carousel-div fade">
-                            <img src="images/carousel_img4.jpg" class="carousel-img" alt="wycieczki">
-                            <p class="text big">zwiedzanie i wycieczki</p>
-                        </div>
-                    </div>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <div class="dot-div">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="desc-right">
+                <p class="small">Projekt UE Erasmus+ nr 2023-1-PL01-KA121-VET-000116641 ukierunkowany jest na
+                    potrzeby zwiększenia
+                    szans
+                    zatrudnienia absolwentów Zespołu Szkól Elektronicznych. Celem projektu jest kształtowanie zawodowych
+                    i społecznych postaw
+                    uczniów ZSE w obszarze europejskim w tym dostosowanie szkoleń zawodowych do obecnych wymagań rynku
+                    pracy oraz
+                    podniesienie efektywności szkolenia zawodowego poprzez szkolenia zawodowe nauczycieli przedmiotów
+                    informatycznych i
+                    elektronicznych w zagranicznych instytucjach szkoleniowych i firmach.</p>
 
-    </section>
-    <section class="statistics">
-        <div class="single-stat">
-            <div class="stat-icon-wrapper">
-                <a href="participants.html" class="stat-anchor"><button class="stat-icon noselect"><img
-                            src="images/icons/group.svg" alt="uczniowie"></button></a>
-            </div>
-            <p class="stat-header">19 uczniów</p>
-            <p class="small">W projekcie wzięło udział dziewietnastu
-                uczniów naszej szkoły. Każdy z uczniów wniósł swoją unikalną perspektywę i entuzjazm do naszej grupy.
-                Wspólnie stworzyliśmy inspirującą społeczność, w której dzieliśmy się wiedzą, doświadczeniami oraz
-                uczyliśmy
-                się
-                od siebie nawzajem.</p>
-            <a href="participants.html" class="stat-anchor"><button class="stat-btn small">DOWIEDZ SIĘ
-                    WIĘCEJ</button></a>
-        </div>
-        <div class="single-stat">
-            <div class="stat-icon-wrapper">
-                <a href="participants.html"><button class="stat-icon noselect"><img style="padding-bottom: 5px;"
-                            src="images/icons/badge.svg" alt="opiekunowie"></button></a>
-            </div>
+                <p class="small">W ramach projektu 19 uczniów Zespołu Szkół Elektronicznych w Rzeszowie
+                    odbędzie 3 tygodniową
+                    praktykę zawodowa
+                    w instytucjach szkoleniowych i firmach w sektorze IT, elektroniki i automatyki w portugalskich
+                    zakładach pracy.</p>
 
-            <p class="stat-header">4 opiekunów</p>
-            <p class="small">Opiekunowie to nieodłączna część
-                każdego projektu. Każdy z nich wniósł nie tylko wiedzę i doświadczenie, ale także wsparcie oraz
-                inspirację dla naszych uczestników. Ich zaangażowanie i profesjonalizm były kluczowe dla sukcesu
-                pobytu.</p>
-            <a href="participants.html" class="stat-anchor"><button class="stat-btn small">DOWIEDZ SIĘ
-                    WIĘCEJ</button></a>
-        </div>
-        <div class="single-stat">
-            <div class="stat-icon-wrapper">
-                <a href="practice.html"><button class="stat-icon noselect"><img src="images/icons/calendar.svg"
-                            alt="kalendarz"></button></a>
-            </div>
+                <p class="small">Celem projektu jest zapoznanie z portugalskim system kształcenia, zapoznanie
+                    ze strukturą
+                    organizacyjną firm
+                    zatrudniających specjalistów w branży elektronicznej i informatycznej, doskonalenie umiejętności
+                    językowych, wymiana
+                    doświadczeń z innymi trenerami w dziedzinie szkolnictwa zawodowego, zapoznanie z organizacją
+                    zewnętrznych egzaminów
+                    zawodowych, z treścią programową przedmiotów zawodowych, innowacyjnymi metodami i technikami
+                    prowadzenia szkoleń
+                    zawodowych, a także zapoznanie ze środkami dydaktycznymi i sposobami ich wykorzystania w procesie
+                    kształcenia.</p>
 
-            <p class="stat-header">15 dni stażu</p>
-            <p class="small">Podczas projektu
-                uczestnicy mieli okazję odbyć 15-dniowy staż w lokalnych firmach. To
-                intensywny okres, w którym uczestnicy byli w stanie praktycznie wykorzystać zdobytą wiedzę i
-                umiejętności, zdobyć nowe
-                doświadczenia zawodowe oraz nawiązać cenne kontakty z profesjonalistami w swojej branży.
-            </p>
-            <a href="practice.html" class="stat-anchor"><button class="stat-btn small">DOWIEDZ SIĘ WIĘCEJ</button></a>
-        </div>
-        <div class="single-stat">
-            <div class="stat-icon-wrapper">
-                <a href="organisators.html"><button class="stat-icon noselect"><img src="images/icons/firm.svg"
-                            alt="firma"></button></a>
-            </div>
+                <p class="small">Praktyki dla uczniów będą organizowane w firmach i instytucjach, które
+                    posiadają już doświadczenie w
+                    szkoleniu
+                    specjalistów z zakresu współczesnych technologii oraz przeprowadzaniu wymiany i stażu w ramach
+                    projektów UE. 19-osobowej
+                    grupie uczniów będzie towarzyszyć 4 nauczycieli/opiekunów.</p>
 
-            <p class="stat-header">6 firm przyjmujących</p>
-            <p class="small">W ramach projektu
-                nasza szkoła współpracowała z sześcioma lokalnymi firmami, które otworzyły swoje drzwi dla naszych
-                uczestników. Dzięki ich wsparciu nasi uczestnicy mogli
-                poznać realia pracy w lokalnym biznesie oraz rozwijać swoje umiejętności praktyczne pod okiem
-                doświadczonych profesjonalistów.</p>
-            <a href="organisators.html" class="stat-anchor"><button class="stat-btn small">DOWIEDZ SIĘ
-                    WIĘCEJ</button></a>
-        </div>
-        <div class="single-stat">
-            <div class="stat-icon-wrapper">
-                <a href="gallery.html"><button class="stat-icon noselect"><img src="images/icons/map.svg"
-                            alt="mapa"></button></a>
-            </div>
+                <p class="small">Uczniowie odbywający praktykę zagraniczną w ramach projektu zdobędą wiedzę
+                    oraz cenne, poszukiwane i
+                    wymagane
+                    przez pracodawców doświadczenie, które stanie się ważnym atutem w znalezieniu pracy w naszym
+                    regionie</p>
 
-            <p class="stat-header">8 aktywności kulturowych</p>
-            <p class="small">Projekt oferował uczestnikom niezapomniane doświadczenia kulturowe poprzez
-                organizację różnorodnych aktywności. Wśród nich znajdowały się m.in. wycieczki do Lizbony, Sewilli i
-                Olhão. Dzięki tym wyjazdom nasi
-                uczestnicy mieli szansę poszerzyć swoje horyzonty oraz poznać lokalne tradycje, smaki oraz obyczaje
-                regionu.</p>
-            <a href="gallery.html" class="stat-anchor"><button class="stat-btn small">DOWIEDZ SIĘ WIĘCEJ</button></a>
+            </div>
         </div>
     </section>
-    <section class="description">
+    <section class="statistics center white-bg">
+        <a href="./participants.html">
+            <div class="single-stat">
+                <img src="./images/icons/group.svg" alt="grupa">
+                <div>
+                    <p class="medium text-one">19</p>
+                    <p class="medium text-two">uczniów</p>
+                </div>
+            </div>
+        </a>
+        <a href="./participants.html">
+            <div class="single-stat">
+                <img src="./images/icons/badge.svg" alt="grupa">
+                <div>
+                    <p class="medium text-one">4</p>
+                    <p class="medium text-two">opiekunów</p>
+                </div>
+            </div>
+        </a>
+        <a href="./practice.html">
+            <div class="single-stat">
+                <img src="./images/icons/calendar.svg" alt="grupa">
+                <div>
+                    <p class="medium text-one">15</p>
+                    <p class="medium text-two">dni stażu</p>
+                </div>
+            </div>
+        </a>
+        <a href="./organisators.html">
+            <div class="single-stat">
+                <img src="./images/icons/firm.svg" alt="grupa">
+                <div>
+                    <p class="medium text-one">6</p>
+                    <p class="medium text-two">firm przyjmujących</p>
+                </div>
+            </div>
+        </a>
+        <a href="./gallery.html">
+            <div class="single-stat" style="background-color: #d4293d">
+                <img src="./images/icons/map.svg" alt="grupa">
+                <div>
+                    <p class="medium text-one">8</p>
+                    <p class="medium text-two">aktywności kulturowych</p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section class="description white-bg">
         <div class="desc-wrapper">
             <div class="desc-div hide desc-div-one">
                 <p class="big desc-header">O projekcie</p>
@@ -239,7 +270,7 @@
             </div>
         </div>
     </section>
-    <section class="goals">
+    <section class="goals white-bg">
         <div class="center">
             <p class="medium-color">Cele projektu</p>
         </div>

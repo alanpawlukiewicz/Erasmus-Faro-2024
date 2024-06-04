@@ -1,5 +1,4 @@
-#tut-pol,
-#tut-eng,
+#tut,
 #top,
 #auto,
 #it,
@@ -38,7 +37,7 @@
 .contents .contents-btn {
 	border: none;
 	color: #fff;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(30, 30, 30, 0.8);
 	padding: 20px 15px;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
@@ -52,7 +51,7 @@
 .contents .big {
 	text-align: center;
 	color: #fff;
-	background-color: #000;
+	background-color: rgba(30, 30, 30, 0.8);
 	border-top-right-radius: 30px;
 	margin: 0;
 	padding: 18px 20px;
@@ -83,8 +82,8 @@
 }
 
 hr {
-	width: 80%;
-	margin: 0 auto;
+	width: 60%;
+	margin: 5px auto;
 }
 
 .participants-img-div {
@@ -191,24 +190,6 @@ hr {
 	font-family: "Lato";
 }
 
-.tutor-img-wrapper {
-	width: 180px;
-	height: 180px;
-	border-radius: 50%;
-	box-shadow: 2px 2px 4px rgba(60, 64, 67, 0.3);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(255, 255, 255, 0.95);
-}
-
-.tutor-img-wrapper img {
-	box-shadow: none;
-	background: none;
-	max-width: 80%;
-	max-height: 80%;
-}
-
 .tutors {
 	justify-content: space-evenly;
 	align-items: center;
@@ -226,11 +207,29 @@ hr {
 	height: 100%;
 	object-fit: cover;
 	border-radius: 30px;
+	box-shadow: 2px 2px 15px #bebebe, -2px -2px 15px #ffffff;
 	transition: transform 0.3s ease-out;
 }
 
 .tutor div img:hover {
 	transform: scale(1.05);
+}
+
+.list {
+	align-self: stretch;
+	background: #fff;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.list ul li {
+	list-style-type: "⭐";
+}
+
+.list .center .medium-color {
+	font-size: 1em;
+	padding: 5px 10px;
 }
 
 @media (max-width: 900px) {

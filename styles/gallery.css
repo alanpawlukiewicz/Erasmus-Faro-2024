@@ -2,6 +2,30 @@ section {
 	scroll-margin-top: 105px;
 }
 
+.section-header {
+	padding: 10px 30px;
+	background: var(--second-red);
+	background: linear-gradient(
+		90deg,
+		var(--second-red) 0%,
+		var(--main-red) 100%
+	);
+	color: var(--light);
+	margin: 50px 0 10px 0;
+	border-radius: 10px;
+	min-width: 240px;
+}
+
+.section-header .big {
+	margin: 0;
+}
+
+.center > .medium-color {
+	margin: 20px 0 10px 0;
+	font-size: 1.2em;
+	padding: 10px 20px;
+}
+
 .contents {
 	display: flex;
 	justify-content: center;
@@ -19,10 +43,14 @@ section {
 	border-top-right-radius: 30px;
 }
 
+.contents div .big {
+	background: rgba(30, 30, 30, 0.8);
+}
+
 .contents .contents-btn {
 	border: none;
 	color: #fff;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(30, 30, 30, 0.8);
 	padding: 20px 15px;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
@@ -117,8 +145,8 @@ section {
 	text-align: center;
 }
 
-.gallery-header hr {
-	width: 80%;
+hr {
+	width: 60%;
 	margin: 0 auto;
 }
 
