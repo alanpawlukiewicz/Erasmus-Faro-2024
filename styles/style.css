@@ -328,7 +328,7 @@ hr {
 .main-section {
 	margin-top: 84px;
 	position: relative;
-	height: 640px;
+	height: 100vh;
 }
 
 .main-section-other {
