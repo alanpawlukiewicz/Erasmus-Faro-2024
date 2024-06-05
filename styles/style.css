@@ -217,8 +217,7 @@ hr {
 	background: none;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 0.95em;
-	color: #000;
+	color: rgb(80, 80, 80);
 	transition: background 0.3s, color 0.3s;
 	font-family: "PoppinsLight";
 }

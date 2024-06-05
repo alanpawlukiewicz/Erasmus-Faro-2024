@@ -13,33 +13,33 @@ menuBtn.addEventListener("click", () => {
 	}
 });
 
-// const header = document.querySelector(".bigger");
-// const navBtns = document.querySelectorAll(".nav-btn");
-// if (header != null) {
-// 	switch (header.innerHTML) {
-// 		case "Uczestnicy Projektu":
-// 			navBtns[1].style.background = "rgba(255, 255, 255, 0.8)";
-// 			break;
-// 		case "Organizatorzy":
-// 			navBtns[2].style.background = "rgba(255, 255, 255, 0.8)";
-// 			break;
-// 		case "Galeria":
-// 			navBtns[4].style.background = "rgba(255, 255, 255, 0.8)";
-// 			navBtns[6].style.background = "rgba(255, 255, 255, 0.8)";
-// 			break;
-// 		case "Praktyki":
-// 			navBtns[4].style.background = "rgba(255, 255, 255, 0.8)";
-// 			navBtns[5].style.background = "rgba(255, 255, 255, 0.8)";
-// 			break;
-// 		case "Przygotowania":
-// 			navBtns[3].style.background = "rgba(255, 255, 255, 0.8)";
-// 			break;
-// 		default:
-// 			console.log("err");
-// 	}
-// } else {
-// 	navBtns[0].style.background = "rgba(255, 255, 255, 0.8)";
-// }
+const header = document.querySelector(".bigger");
+const navBtns = document.querySelectorAll(".nav-btn");
+if (header != null) {
+	switch (header.innerHTML) {
+		case "Uczestnicy Projektu":
+			navBtns[1].style.fontWeight = "800";
+			break;
+		case "Organizatorzy":
+			navBtns[2].style.fontWeight = "800";
+			break;
+		case "Galeria":
+			navBtns[4].style.fontWeight = "800";
+			navBtns[6].style.fontWeight = "800";
+			break;
+		case "Praktyki":
+			navBtns[3].style.fontWeight = "800";
+			break;
+		case "Przygotowania":
+			navBtns[4].style.fontWeight = "800";
+			navBtns[5].style.fontWeight = "800";
+			break;
+		default:
+			console.log("err");
+	}
+} else {
+	navBtns[0].style.fontWeight = "800";
+}
 
 //Inne
 const otherBtn = document.querySelector(".other-btn");
