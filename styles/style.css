@@ -53,16 +53,24 @@ body {
 }
 
 .giant-top,
+.giant-center,
 .giant-bottom {
 	color: var(--light);
-	background: radial-gradient(var(--second-green) 0%, var(--main-green) 100%);
+	background: radial-gradient(#1fa823dd 0%, #22c52add 100%);
 	display: inline-block;
 	padding: 5px 20px;
 	border-radius: 5px;
 }
 
+.giant-center {
+	background: radial-gradient(#bf2537dd 0%, #e02c41dd 100%);
+	margin: 16px 0 5px 0;
+}
+
 .giant-bottom {
-	background: radial-gradient(var(--second-red) 0%, var(--main-red) 100%);
+	background: #f8f9faee;
+	color: #000;
+	margin: 0;
 }
 
 .bigger {

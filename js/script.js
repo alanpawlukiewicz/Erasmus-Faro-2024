@@ -17,7 +17,7 @@ const header = document.querySelector(".bigger");
 const navBtns = document.querySelectorAll(".nav-btn");
 if (header != null) {
 	switch (header.innerHTML) {
-		case "Uczestnicy Projektu":
+		case "Uczestnicy projektu":
 			navBtns[1].style.fontWeight = "800";
 			break;
 		case "Organizatorzy":
@@ -30,7 +30,7 @@ if (header != null) {
 		case "Praktyki":
 			navBtns[3].style.fontWeight = "800";
 			break;
-		case "Przygotowania":
+		case "Realizacja projektu":
 			navBtns[4].style.fontWeight = "800";
 			navBtns[5].style.fontWeight = "800";
 			break;
