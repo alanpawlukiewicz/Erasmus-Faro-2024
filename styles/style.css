@@ -162,14 +162,14 @@ hr {
 
 .logo .logo-center {
 	align-self: stretch;
-	background: var(--main-red);
+	background: var(--main-green);
 	color: var(--light);
 	padding: 5px;
 }
 
 .logo .logo-right {
 	align-self: stretch;
-	background: var(--main-green);
+	background: var(--main-red);
 	color: var(--light);
 	padding: 5px;
 	border-radius: 0 0 10px 0;
